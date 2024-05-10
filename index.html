@@ -8,17 +8,61 @@
     <style>
         body {
             background-color: #a8bda1; /* Soft forest green background */
+            margin: 0; /* Remove default margin */
         }
         .navbar.transparent, .dropdown-menu {
-            background: rgba(255, 255, 255, 0.0); /* Transparent background with slight white for readability */
+            background: rgba(255, 255, 255, 0.0); /* Fully transparent background */
             border: none;
         }
         .image-placeholder {
-            width: 100%;
+            width: 100%; /* Full width of the screen */
             height: 500px; /* Increased height for bigger sections */
             background: url('https://via.placeholder.com/1500') no-repeat center center;
             background-size: cover;
-            margin-top: 20px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .image-section1 {
+            width: 100%; /* Full width of the screen */
+            height: 500px; /* Increased height for bigger sections */
+            background: url('../img/Lisa%26Florian-3.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .image-section2 {
+            width: 100%; /* Full width of the screen */
+            height: 500px; /* Increased height for bigger sections */
+            background: url('../img/Lisa%26Florian-2.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .image-section3 {
+            width: 100%; /* Full width of the screen */
+            height: 500px; /* Increased height for bigger sections */
+            background: url('../img/Lisa%26Florian-8.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .image-section4 {
+            width: 100%; /* Full width of the screen */
+            height: 500px; /* Increased height for bigger sections */
+            background: url('../img/Lisa%26Florian-3.jpg') no-repeat center center;
+            background-size: cover;
             color: #ffffff;
             display: flex;
             align-items: center;
@@ -38,6 +82,12 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        /* Style for the text field */
+        .content-textfield {
+            background: rgba(255, 255, 255, 0.8); /* Slightly opaque white for better readability */
+            padding: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -63,11 +113,15 @@
     </div>
 </nav>
 
-<div id="content" class="container mt-5">
-    <div id="section1" class="image-placeholder">Tagesablauf</div>
-    <div id="section2" class="image-placeholder">Location</div>
-    <div id="section3" class="image-placeholder">Hotels und Unterkunft</div>
-    <div id="section4" class="image-placeholder">Region Immenstadt</div>
+<div id="content" class="container-fluid mt-5"> <!-- Use container-fluid for full-width layout -->
+    <div id="section1" class="image-section1">Tagesablauf</div>
+    <div class="content-textfield">Hier können Sie den Tagesablauf beschreiben.</div>
+    <div id="section2" class="image-section2">Location</div>
+    <div class="content-textfield">Beschreiben Sie hier die Veranstaltungsort.</div>
+    <div id="section3" class="image-section3">Hotels und Unterkunft</div>
+    <div class="content-textfield">Informationen zu Hotels und Unterkünften hier einfügen.</div>
+    <div id="section4" class="image-section4">Region Immenstadt</div>
+    <div class="content-textfield">Erfahren Sie mehr über die Region Immenstadt.</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
