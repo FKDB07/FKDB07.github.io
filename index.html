@@ -8,11 +8,11 @@
         function checkPassword() {
             var password = document.getElementById("password").value;
             var storedPassword1 = "20Li3a&Flo24";
-            var storedPassword1 = "20LI3A&FLO24";
+            var storedPassword2 = "20LI3A&FLO24";
 
-            if (password === storedPassword1 || password == storedPassword2) {
+            if (password === storedPassword1 || password === storedPassword2) {
                 localStorage.setItem("authenticated", "true");
-                window.location.href = "mainpage.html"; // Replace with your main page
+                window.location.href = "main.html"; // Replace with your main page
             } else {
                 alert("Incorrect password. Please try again.");
             }
@@ -26,7 +26,7 @@
     </script>
 </head>
 <body onload="checkIfAuthenticated()">
-    <h2>Please Enter the Password</h2>
+    <h2>Bitte gebt hier das Passwort ein:</h2>
     <form onsubmit="checkPassword(); return false;">
         <input type="password" id="password" required>
         <button type="submit">Enter</button>
